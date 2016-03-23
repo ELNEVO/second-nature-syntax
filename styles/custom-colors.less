@@ -1,0 +1,64 @@
+@very-light-gray: #c5c8c6;
+@light-gray: #969896;
+@gray: #373b41;
+@dark-gray: #282a2e;
+@very-dark-gray: #1d1f21;
+
+@cyan: #8abeb7;
+@blue: #81a2be;
+@purple: #b294bb;
+@green: #b5bd68;
+@red: #cc6666;
+@orange: #de935f;
+@light-orange: #f0c674;
+
+// clarity-syntax theme colors
+@celeste: #b2ffff;
+@base-color: @celeste;
+
+@hue: hue(@base-color);
+@saturation: saturation(@base-color);
+@lightness: lightness(@base-color);
+
+@comp-color: hsl(@hue + 180, @saturation, @lightness);
+@left-ana-color: hsl(@hue - 30, @saturation, @lightness);
+@right-ana-color: hsl(@hue + 30, @saturation, @lightness);
+@left-splitcom-color: hsl(@hue - 150, @saturation, @lightness);
+@left-triadic-color: hsl(@hue - 120, @saturation, @lightness);
+@accent: darken(@celeste, 52%);
+
+// General colors
+@syntax-text-color: desaturate(darken(#fec616, 10%), 65%);
+@syntax-cursor-color: darken(#5164e1, 10%);
+@syntax-selection-color: #e4ebe4;
+@syntax-background-color: desaturate(#f3faf3, 18%);
+
+// Guide colors
+@syntax-wrap-guide-color: @dark-gray;
+@syntax-indent-guide-color: @gray;
+@syntax-invisible-character-color: @gray;
+
+// For find and replace markers
+@syntax-result-marker-color: @accent;
+@syntax-result-marker-color-selected: white;
+
+// Gutter colors
+@syntax-gutter-text-color: #e0b114;
+@syntax-gutter-text-color-selected: @syntax-gutter-text-color;
+@syntax-gutter-background-color: darken(@syntax-background-color, 1.55%);
+@syntax-gutter-background-color-selected: @syntax-gutter-background-color;
+
+// For git diff info. i.e. in the gutter
+@syntax-color-renamed: @blue;
+@syntax-color-added: @green;
+@syntax-color-modified: @orange;
+@syntax-color-removed: @red;
+
+@comment-color: darken(#fff, 27%);
+@constant-color: #cc232f;
+@variable-color: darken(#fec616, 12%);
+@keyword-color: #5164e1;
+@entity-green-color: darken(#a1d421, 8%);
+@entity-tag-color: @variable-color;
+@string-color: lighten(#000, 35%);
+@string-regexp-color: darken(#a1d421, 12%);

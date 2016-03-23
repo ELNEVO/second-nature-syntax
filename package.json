@@ -1,0 +1,15 @@
+{
+  "name": "second-nature-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "A syntax theme that looks and feels like second nature",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/ELNEVO/second-nature-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
